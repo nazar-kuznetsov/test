@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300&display=swap');
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-size: 14px;
+}
+
+.block {
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+}
+
+.my img {
+  object-fit: contain;
+  max-height: 500px;
+}
+
+.active {
+  border: 2px solid blue;
+}
+
+li {
+  list-style: none;
+}
+
+
+body {
+  letter-spacing: .2px;
+  color: #333;
+  background-color: #fafafa;
+  font-family: Roboto,sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  padding-right: 0 !important;
+}
+
+
+img {
+
+}
+
+.upload-module img {
+  object-fit: contain;
+  max-width: 100%;
+  /* max-height: 200px; */
+
+}
+
+.item img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: 150px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.required {
+  color: red;
+}
+
+.item img:hover {
+  transform: scale(1.05);
+}
+
+.dialog-img {
+  object-fit: contain;
+  max-height: 550px;
+}
+
+.upload-image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: 150px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+.modal {
+  background-color: #fff;
+  /* max-width: 1200px; */
+  width: 90%;
+  margin: auto;
+  min-height: 350px;
+  position: relative;
+  height: 100%;
+  max-height: 650px;
+  overflow-y: auto;
+  box-shadow: 1px 0 1px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+  /* padding: 15px; */
+}
+.modal-overlay {
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.modal__close {
+  border: none;
+  background: none;
+  font-size: 22px;
+  outline: none;
+  color: #333;
+  padding: 5px;
+  cursor: pointer;
+}
+.modal__close:hover {
+  color: red;
+}
+.modal__header {
+  display: flex;
+  border-radius: 5px 5px 0 0;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 5px 20px;
+}
+
+.modal__content {
+  padding: 20px;
+}
+
+.modal__content img {
+  max-width: 100%;
+  border-radius: 3px;
+  display: block;
+  margin: auto;
+  flex-grow: 1;
+}
+
+.upload-info {
+  max-width: 330px;
+  width: 100%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
